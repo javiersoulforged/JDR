@@ -29,7 +29,7 @@ k=dim(data1)[2] # Number of Stations
 J <- matrix(NA,k,k)
 diag(J) = 0
 
-i=6; j=7  # Raro que no funcione el for
+i=6; j=7
 J[i,j] = JDR.BT(data1[,i], data1[,j])
 
 J <- round(J,3)
