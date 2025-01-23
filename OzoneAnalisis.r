@@ -13,6 +13,17 @@ data1=d03[,4:10]
 dim(data1)
 names(data1)
 
+install.packages("aTSA")
+library(aTSA)
+
+adf.test(data1[,1])
+adf.test(data1[,2])
+adf.test(data1[,3])
+adf.test(data1[,4])
+adf.test(data1[,5])
+adf.test(data1[,6])
+adf.test(data1[,7])
+
 k=dim(data1)[2] # Number of Stations
 
 J <- matrix(NA,k,k)
